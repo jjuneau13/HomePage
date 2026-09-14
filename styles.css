@@ -1,0 +1,120 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("Roboto-Regular.woff2");
+}
+
+@font-face {
+	font-family: "Playfair";
+	src: url("PlayfairDisplay-Regular.woff2");
+}
+
+html {
+	overscroll-behavior: none;
+}
+
+body {
+	position: relative;
+	top: 0;
+	margin: 0px;
+	width: 100vw;
+}
+
+.background-slant {
+	height: 200vw;
+	width: 100vw;
+	position: absolute;
+	top: -7.5vw;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 35%, 0% 65%);
+	background-color: rgb(26, 141, 180);
+	box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+	z-index: -1;
+}
+
+header {
+	width: 85vw;
+	margin: 7.5vw;
+	position: relative;
+}
+
+.header-img {
+	width: 100%;
+	box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-name {
+	color: white;
+	position: absolute;
+	transform: translate(0, -100%);
+	margin: 0px;
+	padding: 2vw;
+	font-family: "Playfair";
+	font-size: 20vw;
+	font-weight: 100;
+	line-height: 20vw;
+	text-shadow: 0px 5px 5px rgb(0, 0, 0);
+}
+
+h2 {
+	text-align: center;
+	font-family: "Playfair";
+	font-size: clamp(1.6rem, 12.5vw, 3rem);
+	font-weight: 100;
+	margin: 0px 0px;
+}
+
+.about p {
+	font-family: "Roboto";
+	font-size: clamp(1rem, 6.5vw, 1.5rem);
+	color: rgb(100, 100, 100);
+	margin: 5vw;
+	line-height: 1.5;
+}
+
+.links {
+	display: flex;
+	width: 100vw;
+	justify-content: center;
+	gap: 7vw;
+}
+
+.links a {
+	width: clamp(1.5rem, 10vw, 3rem);
+}
+
+.projects {
+	margin-top: 30vw;
+}
+
+.project-cards {
+	display: grid;
+	grid-auto-rows: 35rem;
+	gap: 10rem;
+	margin: 5vw;
+}
+
+.card {
+	box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card > div {
+	font-family: "Playfair";
+	font-size: clamp(1.6rem, 12.5vw, 3rem);
+	text-align: center;
+	height: 60%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.purple {
+	background-color: rgb(128, 120, 201);
+}
+
+.orange {
+	background-color: rgb(219, 142, 0);
+}
+
+.green {
+	background-color: rgb(97, 153, 71);
+}
