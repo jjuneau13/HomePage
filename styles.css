@@ -5,7 +5,7 @@
 
 @font-face {
 	font-family: "Playfair";
-	src: url("PlayfairDisplay-Regular.woff2");
+	src: url("PlayfairDisplay-VariableFont_wght.woff2");
 }
 
 html {
@@ -57,8 +57,8 @@ header {
 h2 {
 	text-align: center;
 	font-family: "Playfair";
-	font-size: clamp(1.6rem, 12.5vw, 3rem);
 	font-weight: 100;
+	font-size: clamp(1.6rem, 13vw, 3rem);
 	margin: 0px 0px;
 }
 
@@ -88,15 +88,15 @@ h2 {
 .project-cards {
 	display: grid;
 	grid-auto-rows: 35rem;
-	gap: 10rem;
-	margin: 5vw;
+	gap: 5rem;
+	margin: 2rem;
 }
 
 .card {
-	box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
-.card > div {
+.img {
 	font-family: "Playfair";
 	font-size: clamp(1.6rem, 12.5vw, 3rem);
 	text-align: center;
@@ -105,6 +105,28 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	color: white;
+}
+
+.card-header {
+	color: black;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0px 2rem;
+	font-size: 1.4rem;
+	font-family: "Playfair";
+	font-weight: 100;
+}
+
+.card-links {
+	width: min-content;
+	display: flex;
+	gap: 1rem;
+}
+
+.card-links > a {
+	width: 6vw;
 }
 
 .purple {
@@ -117,4 +139,38 @@ h2 {
 
 .green {
 	background-color: rgb(97, 153, 71);
+}
+
+.pink {
+	background-color: rgb(197, 108, 148);
+}
+
+.blue {
+	background-color: rgb(92, 145, 211);
+}
+
+footer {
+	color: white;
+	background-color: rgb(40, 152, 187);
+	height: min-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 5rem;
+}
+
+footer > div {
+	padding: 5vw;
+}
+
+footer > img {
+	width: 100vw;
+}
+
+footer > div > .links > a {
+	width: clamp(2rem, 12vw, 4rem);
+}
+
+footer > p {
+	font-size: 7.5vw;
 }
