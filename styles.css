@@ -1,6 +1,6 @@
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Regular.woff2");
+	src: url("Roboto-VariableFont_wdth\,wght.woff2");
 }
 
 @font-face {
@@ -10,10 +10,15 @@
 
 html {
 	overscroll-behavior: none;
+	width: 100vw;
+	overflow-x: hidden;
 }
 
 body {
-	position: relative;
+	position: flex;
+	flex-direction: column;
+	gap: 5rem;
+	overflow-x: hidden;
 	top: 0;
 	margin: 0px;
 	width: 100vw;
@@ -58,14 +63,15 @@ h2 {
 	text-align: center;
 	font-family: "Playfair";
 	font-weight: 100;
-	font-size: clamp(1.6rem, 13vw, 3rem);
+	font-size: clamp(1.6rem, 15vw, 3rem);
 	margin: 0px 0px;
 }
 
 .about p {
 	font-family: "Roboto";
-	font-size: clamp(1rem, 6.5vw, 1.5rem);
+	font-size: clamp(1rem, 7vw, 1.5rem);
 	color: rgb(100, 100, 100);
+	font-weight: 400;
 	margin: 5vw;
 	line-height: 1.5;
 }
@@ -106,6 +112,9 @@ h2 {
 	align-items: center;
 	color: white;
 }
+h3 {
+	font-weight: 100;
+}
 
 .card-header {
 	color: black;
@@ -116,7 +125,6 @@ h2 {
 	margin: 0px 2rem;
 	font-size: 1.4rem;
 	font-family: "Playfair";
-	font-weight: 100;
 }
 
 .card-links {
@@ -127,6 +135,14 @@ h2 {
 
 .card-links > a {
 	width: 6vw;
+}
+
+.card > p {
+	color: rgb(100, 100, 100);
+	font-size: 1.2rem;
+	font-family: "Roboto";
+	font-weight: 400;
+	margin: 0 2rem;
 }
 
 .purple {
