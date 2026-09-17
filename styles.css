@@ -15,9 +15,9 @@ html {
 }
 
 body {
-	position: flex;
+	display: flex;
 	flex-direction: column;
-	gap: 5rem;
+	gap: 10rem;
 	overflow-x: hidden;
 	top: 0;
 	margin: 0px;
@@ -36,9 +36,13 @@ body {
 }
 
 header {
+	width: 100vw;
+	position: relative;
+}
+
+.pfp {
 	width: 85vw;
 	margin: 7.5vw;
-	position: relative;
 }
 
 .header-img {
@@ -63,7 +67,8 @@ h2 {
 	text-align: center;
 	font-family: "Playfair";
 	font-weight: 100;
-	font-size: clamp(1.6rem, 15vw, 3rem);
+	font-size: clamp(1.6rem, 15vw, 3.5rem);
+	color: rgb(45, 45, 45);
 	margin: 0px 0px;
 }
 
@@ -87,10 +92,6 @@ h2 {
 	width: clamp(1.5rem, 10vw, 3rem);
 }
 
-.projects {
-	margin-top: 30vw;
-}
-
 .project-cards {
 	display: grid;
 	grid-auto-rows: 35rem;
@@ -99,7 +100,7 @@ h2 {
 }
 
 .card {
-	box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.1);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .img {
@@ -175,8 +176,9 @@ footer {
 	gap: 5rem;
 }
 
-footer > div {
-	padding: 5vw;
+footer h2 {
+	margin-top: 2rem;
+	color: white;
 }
 
 footer > img {
@@ -187,6 +189,99 @@ footer > div > .links > a {
 	width: clamp(2rem, 12vw, 4rem);
 }
 
-footer > p {
-	font-size: 7.5vw;
+footer p {
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+.address,
+.contact {
+	font-size: 1.2rem;
+}
+
+/*tablet*/
+
+@media (min-width: 700px) {
+	.break {
+		display: none;
+	}
+
+	.projects h2 {
+		text-align: left;
+	}
+
+	.projects {
+		margin: 3rem;
+	}
+
+	.project-cards {
+		grid-template-columns: 1fr 1fr;
+		grid-auto-rows: 25rem;
+		gap: 2.5rem;
+		margin: 0;
+	}
+
+	.img {
+		font-size: 2.2rem;
+	}
+
+	.pfp {
+		position: relative;
+		left: -3rem;
+		top: -8rem;
+		margin: 0px;
+		object-fit: none;
+		width: min-content;
+		height: 52.5vw;
+	}
+
+	.header-img {
+		clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 0% 70%);
+		width: 50vw;
+		box-shadow: 5px 5px 10px black;
+	}
+
+	.header-name {
+		font-size: 7vw;
+		text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+		position: absolute;
+		top: 40%;
+		right: -70%;
+	}
+
+	header {
+		position: relative;
+		width: auto;
+		font-size: 1.4rem;
+		margin: 5rem;
+		margin-top: 10rem;
+		background-color: white;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.about {
+		position: relative;
+		top: -100%;
+	}
+
+	h2 {
+		font-size: 2.5rem;
+	}
+
+	h3 {
+		margin: 1rem 0;
+		font-size: 1.4rem;
+	}
+
+	.card p {
+		font-size: 1rem;
+	}
+
+	.card-links a {
+		width: 3vw;
+	}
 }
