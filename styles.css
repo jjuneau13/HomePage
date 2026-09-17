@@ -230,13 +230,19 @@ footer p {
 	}
 
 	.pfp {
+		float: left;
 		position: relative;
-		left: -3rem;
-		top: -8rem;
+		z-index: 2;
 		margin: 0px;
+		margin-right: 1rem;
 		object-fit: none;
 		width: min-content;
 		height: 52.5vw;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.background-slant {
+		clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 0% 35%);
 	}
 
 	.header-img {
@@ -257,15 +263,37 @@ footer p {
 		position: relative;
 		width: auto;
 		font-size: 1.4rem;
-		margin: 5rem;
-		margin-top: 10rem;
-		background-color: white;
-		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+		margin: 2rem;
+	}
+
+	header .links {
+		width: 100%;
+		justify-content: end;
+		gap: 0px;
+	}
+
+	header .links a {
+		width: 2rem;
+		margin: 10px;
 	}
 
 	.about {
 		position: relative;
-		top: -100%;
+		margin: 2rem;
+		margin-top: 8rem;
+
+		padding: 2rem;
+		padding-top: 4rem;
+		z-index: 1;
+		background-color: white;
+		box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+	}
+
+	.about p {
+		margin-top: 1rem;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
 	}
 
 	h2 {
